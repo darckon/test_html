@@ -8,7 +8,7 @@ RUN rm /usr/share/nginx/html/index.html
 COPY . /usr/share/nginx/html
 
 # Exponer el puerto 80
-EXPOSE 8087
+EXPOSE 80
 
 # Iniciar Nginx en el primer plano
 CMD ["nginx", "-g", "daemon off;"]
